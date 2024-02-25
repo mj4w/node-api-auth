@@ -7,7 +7,9 @@
 ## npm 
 npm init -y
 
-```npm install --save express morgan http-errors dotenv mongoose```
+```npm install --save express mongoose @hapi/joi bcrpyt```
+
+```npm install morgan http-errors dotenv```
 
 npm start using ```nodemon``` package
 ```node
@@ -33,3 +35,10 @@ go to file & click ```send request```
 [Postman](https://www.postman.com/downloads/)
 
 [MongoDB Community](https://www.mongodb.com/try/download/community)
+
+## Documentation
+[Joi Validation Schema](https://hapi.dev/tutorials/validation/?lang=en_US)
+
+[JSON Web Tokens](https://jwt.io/)
+
+[NodeJs Doc](https://nodejs.org/docs/latest/api/synopsis.html)
