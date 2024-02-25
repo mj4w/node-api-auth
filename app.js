@@ -7,12 +7,14 @@ require('./helpers/init_mongodb')
 const AuthRoute = require('./Routes/Auth')
 const app = express()
 
+
+app.use(morgan('dev'))
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
 app.get('/',async(req,res,next) => {
     res.send('Welcome! Auth API')
 })
-
-// Developer server
-app.use(morgan('dev'))
 
 // Auth Route
 app.use('/auth',AuthRoute)

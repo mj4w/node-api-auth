@@ -2,7 +2,12 @@ GET http://localhost:3000/
 
 ### Register
 POST http://localhost:3000/auth/register
+Content-Type: application/json
 
+{
+    "email": "juandelacruz@gmail.com",
+    "password": "1234"
+}
 ### login
 POST http://localhost:3000/auth/login
 
