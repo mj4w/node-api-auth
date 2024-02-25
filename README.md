@@ -4,27 +4,24 @@
 > This API is Basic Authentication in Node + Express.
 
 
-# npm initialize
-### npm init -y
+## npm initialize
+npm init -y
 
-### ```npm install --save express morgan http-errors dotenv mongoose```
+```npm install --save express morgan http-errors dotenv mongoose```
 
-### npm start using ```nodemon``` package
-### 
+npm start using ```nodemon``` package
 ```node
 "scripts": {
   "start": "nodemon app.js"
 }
 ```
 
-# send request
-### install extension ```Rest Client```
+## send request
+install extension ```Rest Client```
+create a file ```rest.http```
+go to file & click ```send request```
 
-### create a file ```rest.http```
- 
-### go to file & click ```send request```
-
-### Routes
+## Routes
 ``` /auth/register ```
 ``` /auth/login ```
 ``` /auth/logout ```
