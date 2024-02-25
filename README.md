@@ -4,7 +4,7 @@
 > This API is Basic Authentication in Node + Express.
 
 
-## npm initialize
+## npm 
 npm init -y
 
 ```npm install --save express morgan http-errors dotenv mongoose```
@@ -26,3 +26,10 @@ go to file & click ```send request```
 ``` /auth/login ```
 ``` /auth/logout ```
 ``` /auth/refresh-token ```
+
+## Application
+Visual Studio Code
+
+Postman
+
+MongoDB Compass
