@@ -42,3 +42,9 @@ go to file & click ```send request```
 [JSON Web Tokens](https://jwt.io/)
 
 [NodeJs Doc](https://nodejs.org/docs/latest/api/synopsis.html)
+
+[Random Key Generator](https://randomkeygen.com/)
+
+## Run JS file 
+e.g.
+``` nodemon ./helpers/generate_keys.js ```
