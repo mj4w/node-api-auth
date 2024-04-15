@@ -1,4 +1,6 @@
+
 GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MTMxNTQyNjIsImV4cCI6MTcxMzE1NDI3NywiYXVkIjoiNjYxN2QzM2EyNDk1ZmE3Y2E3ZjRiYjEzIiwiaXNzIjoid2Vic2l0ZS5jb20ifQ.TlSp3EsobeRPDoR_-R6-YZLjaff27PR_tTxx8h18n7w
 
 ### Register
 POST http://localhost:3000/auth/register
@@ -16,6 +18,7 @@ Content-Type: application/json
     "email": "try@gmail.com",
     "password": "1234"
 }
+
 
 ### Refresh-Token
 POST http://localhost:3000/auth/refresh-token
