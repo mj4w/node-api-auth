@@ -10,7 +10,7 @@ module.exports = {
             }
             const secret = process.env.ACCESS_TOKEN_SECRET
             const options = {
-                expiresIn: "15s",
+                expiresIn: "1d",
                 issuer: "website.com",
                 audience: userId,
             }
@@ -63,5 +63,15 @@ module.exports = {
             next()
         })
 
+    },
+    verifyRefreshToken: (refreshToken) => {
+        return new Promise((resolve, reject) => {
+            const secret = process.env.REFRESH_TOKEN_SECRET
+            JWT.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (error, payload) => {
+                if (error) return reject(createError.Unauthorized())
+                const userId = payload.aud
+                resolve(userId)
+            })
+        })
     }
 }
